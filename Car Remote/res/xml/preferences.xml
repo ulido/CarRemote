@@ -1,0 +1,3 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="Host Name" android:summary="Host Name of the Car Remote Arduino" android:key="hostName"/>
+</PreferenceScreen>

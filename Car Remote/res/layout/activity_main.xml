@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/stop"
+        android:onClick="stopHandler"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stop"
+        android:layout_alignLeft="@+id/stop"
+        android:contentDescription="@string/forward"
+        android:onClick="forwardHandler"
+        android:src="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stop"
+        android:layout_toLeftOf="@+id/stop"
+        android:contentDescription="@string/left"
+        android:onClick="leftHandler"
+        android:src="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stop"
+        android:layout_below="@+id/stop"
+        android:contentDescription="@string/backward"
+        android:onClick="backwardHandler"
+        android:src="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stop"
+        android:layout_toRightOf="@+id/stop"
+        android:contentDescription="@string/right"
+        android:onClick="rightHandler"
+        android:src="@drawable/right" />
+
+</RelativeLayout>
